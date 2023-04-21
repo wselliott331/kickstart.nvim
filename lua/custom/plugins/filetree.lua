@@ -8,6 +8,12 @@ return {
 		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 	},
+	opts = {
+		options = {
+			icons_enabled = true,
+			theme = 'dracula',
+		}
+	},
 	config = function ()
 		require('neo-tree').setup {}
 	end,

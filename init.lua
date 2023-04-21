@@ -80,8 +80,8 @@ require('lazy').setup({
     end,
   },
 ]]-- 
-  { --Port of Dracula theme for neovim
-    'Mofiqul/dracula.nvim',
+  { -- Dracula theme
+    'dracula/vim',
     priority = 1000,
     config = function()
       vim.cmd.colorscheme 'dracula'
@@ -94,7 +94,7 @@ require('lazy').setup({
     opts = {
       options = {
         icons_enabled = false,
-        theme = 'onedark',
+        theme = 'dracula',
         component_separators = '|',
         section_separators = '',
       },
@@ -311,7 +311,7 @@ require('nvim-treesitter.configs').setup {
       },
       swap_previous = {
         ['<leader>A'] = '@parameter.inner',
-      },
+     },
     },
   },
 }
